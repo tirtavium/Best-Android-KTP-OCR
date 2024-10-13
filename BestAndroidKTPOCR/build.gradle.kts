@@ -35,6 +35,18 @@ android {
 
 
 }
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                from (components["release"])
+                groupId = "com.tirtavium.bestandroidktpocr"
+                artifactId = "bestandroidktpocr"
+                version = "1.0.2"
+            }
+        }
+    }
+}
 
 
 dependencies {
