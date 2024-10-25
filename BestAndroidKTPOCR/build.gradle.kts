@@ -42,7 +42,7 @@ afterEvaluate {
                 from (components["release"])
                 groupId = "com.tirtavium.bestandroidktpocr"
                 artifactId = "bestandroidktpocr"
-                version = "1.0.4"
+                version = "1.0.5"
             }
         }
     }
@@ -50,12 +50,11 @@ afterEvaluate {
 
 
 dependencies {
-    implementation(platform("androidx.compose:compose-bom:2023.03.00"))
+    //implementation(platform("androidx.compose:compose-bom:2023.03.00"))
     implementation ("com.google.android.gms:play-services-mlkit-text-recognition:18.0.2")
     implementation("androidx.test:monitor:1.7.2")
     implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.appcompat:appcompat:1.7.0")
-    implementation("com.google.android.material:material:1.12.0")
+
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
