@@ -42,7 +42,7 @@ afterEvaluate {
                 from (components["release"])
                 groupId = "com.tirtavium.bestandroidktpocr"
                 artifactId = "bestandroidktpocr"
-                version = "1.0.3"
+                version = "1.0.4"
             }
         }
     }
